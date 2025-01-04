@@ -33,7 +33,7 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
   - Web Interface
  
 ### Circuit Diagram
-![SmartDeliveryBox Circuit]()
+![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
 ### Workflow
 1. Delivery personnel uses OTP to unlock the box and place the package.
