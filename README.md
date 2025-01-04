@@ -19,15 +19,16 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 ## 🛠 Technical Details
 
 ### Hardware
-- **Electronic Lock** : [Specifications and Purchase Link]([https://example.com/electronic-lock](https://www.icshop.com.tw/products/368011000480))
+- **[Electronic Lock](https://www.icshop.com.tw/products/368011000480)**
   - Voltage : 12V / 24V
   - Current : 0.8A / 1.2A
   - Power Consumption : 9.6W / 28.8W
   - Bolt Stroke Length : 10mm
   - Power-On Action Time : ≤ 1S
   - Continuous Power-On Time : ≤ 10S
+- **[LCD Screen](https://www.taiwaniot.com.tw/product/1602-%e8%97%8d%e5%ba%95%e7%99%bd%e5%ad%97-iici2c-6x2-%e8%83%8c%e5%85%89%e6%b6%b2%e6%99%b6%e6%a8%a1%e7%b5%84/)** : Used to display OTP-related instructions and feedback for delivery personnel
+- **[Relay-Controlled Locking System](https://www.taiwaniot.com.tw/product/1%e8%b7%af%e7%b9%bc%e9%9b%bb%e5%99%a8%e6%a8%a1%e7%b5%84-5v%e4%bd%8e%e9%9b%bb%e5%b9%b3%e8%a7%b8%e7%99%bc-%e7%b9%bc%e9%9b%bb%e5%99%a8%e6%93%b4%e5%b1%95%e6%9d%bf-%e8%97%8d%e7%89%88/) ** : Relay controls the electronic lock for secure operation.
 - **Raspberry Pi** : Central control unit
-- **LCD Screen** : Used to display OTP-related instructions and feedback for delivery personnel
 
 ### Software
 - **Development Frameworks**:
