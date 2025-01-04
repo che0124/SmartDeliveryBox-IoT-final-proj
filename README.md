@@ -19,15 +19,15 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 ## 🛠 Technical Details
 
 ### Hardware
-- **Electronic Lock**:
-  - Voltage: 12V/24V
-  - Current: 0.8A/1.2A
-  - Power Consumption: 9.6W/28.8W
-  - Bolt Stroke Length: 10mm
-  - Power-On Action Time: ≤1S
-  - Continuous Power-On Time: ≤10S
-- **Raspberry Pi**: Central control unit
-- **LCD Screen**: Used to display OTP-related instructions and feedback for delivery personnel
+- **Electronic Lock** : [Specifications and Purchase Link]([https://example.com/electronic-lock](https://www.icshop.com.tw/products/368011000480))
+  - Voltage : 12V / 24V
+  - Current : 0.8A / 1.2A
+  - Power Consumption : 9.6W / 28.8W
+  - Bolt Stroke Length : 10mm
+  - Power-On Action Time : ≤ 1S
+  - Continuous Power-On Time : ≤ 10S
+- **Raspberry Pi** : Central control unit
+- **LCD Screen** : Used to display OTP-related instructions and feedback for delivery personnel
 
 ### Software
 - **Development Frameworks**:
