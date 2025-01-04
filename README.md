@@ -31,6 +31,9 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
   - Firebase: Data storage
 - **Platform**:
   - Web Interface
+ 
+### Circuit Diagram
+![SmartDeliveryBox Circuit]()
 
 ### Workflow
 1. Delivery personnel uses OTP to unlock the box and place the package.
