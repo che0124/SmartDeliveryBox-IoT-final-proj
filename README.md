@@ -54,7 +54,7 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
    ```
 2. Install dependencies:
    ```bash
-   cd SmartDeliveryBox-Pi
+   cd Siot-SmartDeliveryBox-RaspberryPi
    pip install -r requirements.txt
    ```
 3. Run the program:
@@ -69,14 +69,14 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
    ```
 2. Install dependencies:
    ```bash
-   cd SmartDeliveryBox
+   cd iot-final_proj
    pip install -r requirements.txt
    ```
 3. Start the server:
    ```bash
    python app.py
    ```
-4. Open `http://<Computer_IP>:5000` in a browser to access the interface.
+4. Open `http://localhost:5000` in a browser to access the interface.
 
 
 
