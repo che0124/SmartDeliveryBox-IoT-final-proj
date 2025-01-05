@@ -44,8 +44,6 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 5. **Hardware Integration**:  
    The Raspberry Pi server controls the hardware components, including the locking mechanism, relay, and LCD, ensuring seamless interaction between software and hardware.
 
-## Circuit Diagram
-![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
 ## System Diagram
 ![SmartDeliveryBox system](img/system-diagram.png)
@@ -55,6 +53,8 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 ### Hardware Setup
 1. Ensure Raspberry Pi is connected to the electronic lock and LCD screen.
 2. Check for stable network connectivity.
+   ### Circuit Diagram
+![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
 ### Software Installation
 #### For Raspberry Pi
