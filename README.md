@@ -39,15 +39,11 @@ Before beginning the installation, ensure you have the following:
 ### Software Requirements
 - Python 3.x
 - Firebase account with a configured project
-
-<br>
   
 ---  
 
-<br>
-
 ## 🚀 Quick Start Guide
-### Wiring Instructions
+### Hardware Setup
 1. Power Supply Configuration
    ```bash
    - Connect two 6V battery packs:
