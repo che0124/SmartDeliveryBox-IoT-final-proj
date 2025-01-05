@@ -44,7 +44,7 @@ Before beginning the installation, ensure you have the following:
 ### Wiring Instructions
 1. Power Supply Configuration
    ```bash
-   - Connect two 6V battery packs in series:
+   - Connect two 6V battery packs:
      Battery Pack 1 (+) → Battery Pack 2 (-)
      Battery Pack 1 (-) → Lock Negative (-)
      Battery Pack 2 (+) → Relay NO (Normally Open)
@@ -61,7 +61,7 @@ Before beginning the installation, ensure you have the following:
    - IN  → Raspberry Pi GPIO14 (Pin 8)
    ```
 
-Circuit Diagram
+### Circuit Diagram
   ![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
 ## Software Installation
