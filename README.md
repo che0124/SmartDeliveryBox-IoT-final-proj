@@ -69,6 +69,7 @@ Alternatively, you can enable via the command line:
    ```
 
 ### Hardware Setup
+  ![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
 1. Power Supply Configuration
    ```bash
    - Connect two 6V battery packs:
@@ -87,8 +88,6 @@ Alternatively, you can enable via the command line:
    - GND → Raspberry Pi GND (Pin 6)
    - IN  → Raspberry Pi GPIO14 (Pin 8)
    ```
-4. Circuit Diagram 
-  ![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
 
 ### Software Installation
 #### For Raspberry Pi
