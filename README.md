@@ -40,10 +40,11 @@ Before beginning the installation, ensure you have the following:
 - Python 3.x
 - Firebase account with a configured project
 
+<br>
   
----
+---  
 
-  
+<br>
 
 ## 🚀 Quick Start Guide
 ### Wiring Instructions
