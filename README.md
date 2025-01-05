@@ -62,8 +62,7 @@ Before beginning the installation, ensure you have the following:
    - GND → Raspberry Pi GND (Pin 6)
    - IN  → Raspberry Pi GPIO14 (Pin 8)
    ```
-4. Circuit Diagram
-   
+4. Circuit Diagram 
   ![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
 ### Software Installation
