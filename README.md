@@ -9,9 +9,9 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 **IoT SmartDeliveryBox** is a smart delivery box designed to address security and delivery challenges in the food delivery process, offering an improved experience for users.
 
 ### Key Features
-1. **OTP Verification for Delivery Personnel** : Delivery personnel can use a one-time password (OTP) for secure access.
-2. **LCD Display for Delivery Personnel** : An LCD screen provides delivery personnel with clear instructions and feedback.
-3. **Group Access Management** : Users can create and manage groups, allowing multiple people to control the same box.
+1. **OTP Verification for Delivery Personnel** : Use a one-time password (OTP) for secure access.
+2. **LCD Display for Delivery Personnel** : An LCD screen provides clearly instructions and feedback.
+3. **Group Access Management** : Allowing multiple people to control the same box.
 4. **Secure Lock Control** : Electronic lock supports control via the web interface.
 5. **User-Friendly Operation** : Operated through a web-based interface.
 
