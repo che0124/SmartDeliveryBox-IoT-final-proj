@@ -54,34 +54,34 @@ Before beginning the installation, ensure you have the following:
 
 ## 🚀 Implement
 
-### Setup Raspberry Pi
-1. Follow the wesite below to set up your Raspberry Pi.<br>
+### 1. Setup Raspberry Pi
+- Follow the wesite below to set up your Raspberry Pi.<br>
 [https://www.raspberrypi.com/documentation/computers/getting-started.html](https://www.raspberrypi.com/documentation/computers/getting-started.html)
-2. Enabling SSH / I2C / VNC
+- Enabling SSH / I2C / VNC
    - Open the Raspberry Pi Configuration tool from the Preferences menu.
    - Navigate to the "Interfaces" tab.
    - Enable SSH / I2C / VNC by selecting the "Enabled" radio button.
    - Click "OK" to save the changes.
 
-Alternatively, you can enable via the command line:
+- Alternatively, you can enable via the command line:
    ```bash
-      sudo raspi-config
+   - sudo raspi-config
    ```
 
-### Hardware Setup
-1. Power Supply Configuration
+### 2. Hardware Setup
+- Power Supply Configuration
    ```bash
    - Connect two 6V battery packs:
      Battery Pack 1 (+) → Battery Pack 2 (-)
      Battery Pack 1 (-) → Lock Negative (-)
      Battery Pack 2 (+) → Relay NO (Normally Open)
    ```
-2. Electronic Lock Wiring
+- Electronic Lock Wiring
    ```bash
    - Lock Positive (+) → Relay COM (Common)
    - Lock Negative (-) → Battery Pack 1 (-)
    ```
-3. Relay Module Connections
+- Relay Module Connections
    ```bash
    - VCC → Raspberry Pi 5V (Pin 2)
    - GND → Raspberry Pi GND (Pin 6)
