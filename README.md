@@ -65,27 +65,27 @@ Before beginning the installation, ensure you have the following:
 
 - Alternatively, you can enable via the command line:
    ```bash
-   - sudo raspi-config
+   sudo raspi-config
    ```
 
 ### 2. Hardware Setup
 - Power Supply Configuration
    ```bash
-   - Connect two 6V battery packs:
+   Connect two 6V battery packs:
      Battery Pack 1 (+) → Battery Pack 2 (-)
      Battery Pack 1 (-) → Lock Negative (-)
      Battery Pack 2 (+) → Relay NO (Normally Open)
    ```
 - Electronic Lock Wiring
    ```bash
-   - Lock Positive (+) → Relay COM (Common)
-   - Lock Negative (-) → Battery Pack 1 (-)
+   Lock Positive (+) → Relay COM (Common)
+   Lock Negative (-) → Battery Pack 1 (-)
    ```
 - Relay Module Connections
    ```bash
-   - VCC → Raspberry Pi 5V (Pin 2)
-   - GND → Raspberry Pi GND (Pin 6)
-   - IN  → Raspberry Pi GPIO14 (Pin 8)
+   VCC → Raspberry Pi 5V (Pin 2)
+   GND → Raspberry Pi GND (Pin 6)
+   IN  → Raspberry Pi GPIO14 (Pin 8)
    ```
 ![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
 
