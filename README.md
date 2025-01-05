@@ -44,7 +44,9 @@ Before beginning the installation, ensure you have the following:
    - firebase-admin 
    - pyotp
    - requests
+ 
 <br>
+
    > Librarie for Raspberry Pi
    - RPi.GPIO
    - RPLCD
