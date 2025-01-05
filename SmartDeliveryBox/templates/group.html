@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}個人頁面{% endblock %}
+
+{% block content %}
+
+<h2>創建群組</h2>
+<form id="create-group-form">
+    <label for="group-name">群組名稱：</label>
+    <input type="text" id="group-name" name="group-name" required>
+    <label for="group-members">成員電子郵件（用逗號分隔）：</label>
+    <input type="text" id="group-members" name="group-members" required>
+    <button type="submit">創建群組</button>
+</form>
+
+<h2>新增群組成員</h2>
+<form id="add-member-form">
+    <label for="group-name">群組名稱：</label>
+    <input type="text" id="add-group-name" name="group-name" required>
+    <label for="member-email">成員電子郵件：</label>
+    <input type="email" id="add-member-email" name="member-email" required>
+    <button type="submit">新增成員</button>
+</form>
+
+<script>
+    document.getElementById('create-group-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const groupName = document.getElementById('group-name').value;
+        const groupMembers = document.getElementById('group-members').value.split(',').map(email => email.trim());
+
+        fetch('/create_group', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ group_name: groupName, members: groupMembers })
+        })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (data.success) {
+                    loadGroups();
+                }
+            });
+    });
+
+    document.getElementById('add-member-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const groupName = document.getElementById('add-group-name').value;
+        const memberEmail = document.getElementById('add-member-email').value;
+
+        fetch('/add_group_member', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ group_name: groupName, member_email: memberEmail })
+        })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (data.success) {
+                    loadGroups();
+                }
+            });
+    });
+</script>
+{% endblock %}

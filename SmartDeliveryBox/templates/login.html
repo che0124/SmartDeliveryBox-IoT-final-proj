@@ -1,0 +1,17 @@
+{% extends "auth.html" %}
+
+{% block content %}
+<form id="login-form">
+    <h1>登入</h1>
+    <div>
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="password">密碼：</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">登入</button>
+    <p>Don't have an account? <a href="/register">Register here</a></p>
+</form>
+{% endblock %}

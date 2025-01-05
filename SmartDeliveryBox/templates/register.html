@@ -1,0 +1,24 @@
+{% extends "auth.html" %}
+
+{% block content %}
+<form id="register-form">
+    <h1>註冊</h1>
+    <div>
+        <label for="email">電子郵件：</label>
+        <input type="email" id="register-email" name="email" required>
+    </div>
+    <div>
+        <label for="password">密碼：</label>
+        <input type="password" id="register-password" name="password" required>
+    </div>
+    <div>
+        <label for="role">選擇身份：</label>
+        <select id="register-role" name="role">
+            <option value="delivery">外送員</option>
+            <option value="customer">消費者</option>
+        </select>
+    </div>
+    <button type="submit">註冊</button>
+    <p>Already have an account? <a href="/login">Login here</a></p>
+</form>
+{% endblock %}
