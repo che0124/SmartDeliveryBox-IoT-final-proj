@@ -1,11 +1,10 @@
 # IoT SmartDeliveryBox
+A secure and intelligent delivery management system leveraging IoT technology to revolutionize the delivery experience. This solution combines electronic access control with a web-based interface to provide a seamless, secure platform for managing deliveries.
 
-A smart delivery box system that leverages IoT technology to enhance the delivery and pickup experience. It integrates electronic lock control and a web-based user interface to provide security and convenience.
-
-## System Diagram
+## 📊 System Architecture
 ![SmartDeliveryBox system](img/system-diagram.png)
 
-## Key Features
+## 🌟 Features
 - **OTP Verification for Delivery Personnel** : Use a one-time password (OTP) for secure access.
 - **LCD Display for Delivery Personnel** : An LCD screen provides clearly instructions and feedback.
 - **Group Access Management** : Allowing multiple people to control the same box.
@@ -28,27 +27,41 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 5. **Hardware Integration**:  
    The Raspberry Pi server controls the hardware components, including the locking mechanism, relay, and LCD, ensuring seamless interaction between software and hardware.
 
-## Required Components
-### Hardware
+## 📋 Prerequisites
+Before beginning the installation, ensure you have the following:
+### Hardware Requirements
 - **Raspberry Pi**
-- **[LY-03 DC12V電磁電控鎖](https://www.icshop.com.tw/products/368011000480)**
-- **[1路5V繼電器模組](https://www.taiwaniot.com.tw/product/1%e8%b7%af%e7%b9%bc%e9%9b%bb%e5%99%a8%e6%a8%a1%e7%b5%84-5v%e4%bd%8e%e9%9b%bb%e5%b9%b3%e8%a7%b8%e7%99%bc-%e7%b9%bc%e9%9b%bb%e5%99%a8%e6%93%b4%e5%b1%95%e6%9d%bf-%e8%97%8d%e7%89%88/)**
-- **[IIC/I2C 1602 LCD 藍色背光液晶模組](https://www.taiwaniot.com.tw/product/1602-%e8%97%8d%e5%ba%95%e7%99%bd%e5%ad%97-iici2c-6x2-%e8%83%8c%e5%85%89%e6%b6%b2%e6%99%b6%e6%a8%a1%e7%b5%84/)**
-- **6V Battery Pack (Two packs connected in series to provide 12V)**
+- **[LY-03 DC12V Electronic Lock](https://www.icshop.com.tw/products/368011000480)**
+- **[5V Single Channel Relay Module](https://www.taiwaniot.com.tw/product/1%e8%b7%af%e7%b9%bc%e9%9b%bb%e5%99%a8%e6%a8%a1%e7%b5%84-5v%e4%bd%8e%e9%9b%bb%e5%b9%b3%e8%a7%b8%e7%99%bc-%e7%b9%bc%e9%9b%bb%e5%99%a8%e6%93%b4%e5%b1%95%e6%9d%bf-%e8%97%8d%e7%89%88/)**
+- **[I2C 1602 LCD Module with Blue Backlight](https://www.taiwaniot.com.tw/product/1602-%e8%97%8d%e5%ba%95%e7%99%bd%e5%ad%97-iici2c-6x2-%e8%83%8c%e5%85%89%e6%b6%b2%e6%99%b6%e6%a8%a1%e7%b5%84/)**
+- **12V Power Supply (Two 6V battery packs in series)**
 
-### Software
-- **Development Frameworks**:
-  - Flask: Web interface and API
-  - Firebase: Data storage and Authentication
-- **Platform**:
-  - Web Interface
-  - Raspberry Pi Server
+### Software Requirements
+- Python 3.x
+- Firebase account with a configured project
 
+## 🚀 Quick Start Guide
+### Wiring Instructions
+1. Power Supply Configuration
+   ```bash
+   - Connect two 6V battery packs in series:
+     Battery Pack 1 (+) → Battery Pack 2 (-)
+     Battery Pack 1 (-) → Lock Negative (-)
+     Battery Pack 2 (+) → Relay NO (Normally Open)
+   ```
+2. Electronic Lock Wiring
+   ```bash
+   - Lock Positive (+) → Relay COM (Common)
+   - Lock Negative (-) → Battery Pack 1 (-)
+   ```
+3. Relay Module Connections
+   ```bash
+   - VCC → Raspberry Pi 5V (Pin 2)
+   - GND → Raspberry Pi GND (Pin 6)
+   - IN  → Raspberry Pi GPIO14 (Pin 8)
+   ```
 
-## Hardware Setup
-1. Ensure Raspberry Pi is connected to the electronic lock and LCD screen.
-2. Check for stable network connectivity.
-### Circuit Diagram
+Circuit Diagram
   ![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
 ## Software Installation
