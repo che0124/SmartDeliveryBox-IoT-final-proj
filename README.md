@@ -101,7 +101,7 @@ Before beginning the installation, ensure you have the following:
 
 ```plaintext
 SmartDeliveryBox-Pi/
-├── app.py         # Raspberry Pi application entry point
+├── app.py            # Raspberry Pi application entry point
 ├── requirements.txt  # Dependency requirements
 └── README.md         # Documentation
 
