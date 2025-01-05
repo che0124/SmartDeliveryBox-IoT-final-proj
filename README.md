@@ -61,7 +61,7 @@ Before beginning the installation, ensure you have the following:
    - IN  → Raspberry Pi GPIO14 (Pin 8)
    ```
 
-### Circuit Diagram
+   ### Circuit Diagram
   ![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
 ## Software Installation
