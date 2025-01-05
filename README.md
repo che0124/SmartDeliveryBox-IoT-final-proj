@@ -66,14 +66,14 @@ Before beginning the installation, ensure you have the following:
   ![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
 ### Software Installation
-#### **For Raspberry Pi**
+#### For Raspberry Pi
 1. Clone the Raspberry Pi repository:
    ```bash
-   git clone https://github.com/che0124/iot-SmartDeliveryBox-RaspberryPi.git
+   git clone https://github.com/che0124/SmartDeliveryBox-RaspberryPi.git
    ```
 2. Install dependencies:
    ```bash
-   cd Siot-SmartDeliveryBox-RaspberryPi
+   cd SmartDeliveryBox-RaspberryPi
    pip install -r requirements.txt
    ```
 3. Run the program:
@@ -81,14 +81,14 @@ Before beginning the installation, ensure you have the following:
    python app.py
    ```
 
-#### **For Web Server (Computer)**
+#### For Web Server (Computer)
 1. Clone the repository:
    ```bash
-   git clone https://github.com/che0124/iot-final_proj.git
+   git clone https://github.com/che0124/SmartDeliveryBox-IoT-final-proj.git
    ```
 2. Install dependencies:
    ```bash
-   cd iot-final_proj
+   cd SmartDeliveryBox-IoT-final-proj
    pip install -r requirements.txt
    ```
 3. Start the server:
@@ -114,11 +114,6 @@ SmartDeliveryBox-Pi/
 ├── requirements.txt  # Dependency requirements
 └── README.md         # Documentation
 ```
-
----
-
-## 🛡 Security and Privacy
-- All data transmission is encrypted to ensure user privacy.
 
 ---
 
