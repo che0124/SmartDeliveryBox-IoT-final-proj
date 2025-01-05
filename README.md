@@ -40,86 +40,84 @@ Before beginning the installation, ensure you have the following:
 - **Raspbian Buster OS**
 - **Firebase account with a configured project**
 - **Python 3.x**
-   #### Librarie for web server
+- **Libraries for web server**
    - Flask
    - firebase-admin 
    - pyotp
    - requests
-   #### Librarie for Raspberry Pi
+- **Librarie for Raspberry Pi**
    - RPi.GPIO
    - RPLCD
    - smbus
    - Flask
-> These libraries will be installed later
 
 ## 🚀 Implement
 
-### 1. Setup Raspberry Pi
-- Follow the wesite below to set up your Raspberry Pi.<br>
-[https://www.raspberrypi.com/documentation/computers/getting-started.html](https://www.raspberrypi.com/documentation/computers/getting-started.html)
-- Enabling SSH / I2C / VNC
-   - Open the Raspberry Pi Configuration tool from the Preferences menu.
-   - Navigate to the "Interfaces" tab.
-   - Enable SSH / I2C / VNC by selecting the "Enabled" radio button.
-   - Click "OK" to save the changes.
+1. ### Setup Raspberry Pi
+   - Follow the wesite below to set up your Raspberry Pi.<br>
+   [https://www.raspberrypi.com/documentation/computers/getting-started.html](https://www.raspberrypi.com/documentation/computers/getting-started.html)
+   - Enabling SSH / I2C / VNC
+      - Open the Raspberry Pi Configuration tool from the Preferences menu.
+      - Navigate to the "Interfaces" tab.
+      - Enable SSH / I2C / VNC by selecting the "Enabled" radio button.
+      - Click "OK" to save the changes.
+   - Alternatively, you can enable via the command line:
+      ```bash
+      sudo raspi-config
+      ```
 
-- Alternatively, you can enable via the command line:
-   ```bash
-   sudo raspi-config
-   ```
+2. ### Hardware Setup
+   - **Power Supply Configuration**
+      ```bash
+      Connect two 6V battery packs:
+        Battery Pack 1 (+) → Battery Pack 2 (-)
+        Battery Pack 1 (-) → Lock Negative (-)
+        Battery Pack 2 (+) → Relay NO (Normally Open)
+      ```
+   - **Electronic Lock Wiring**
+      ```bash
+      Lock Positive (+) → Relay COM (Common)
+      Lock Negative (-) → Battery Pack 1 (-)
+      ```
+   - **Relay Module Connections**
+      ```bash
+      VCC → Raspberry Pi 5V (Pin 2)
+      GND → Raspberry Pi GND (Pin 6)
+      IN  → Raspberry Pi GPIO14 (Pin 8)
+      ```
+   ![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
 
-### 2. Hardware Setup
-- Power Supply Configuration
-   ```bash
-   Connect two 6V battery packs:
-     Battery Pack 1 (+) → Battery Pack 2 (-)
-     Battery Pack 1 (-) → Lock Negative (-)
-     Battery Pack 2 (+) → Relay NO (Normally Open)
-   ```
-- Electronic Lock Wiring
-   ```bash
-   Lock Positive (+) → Relay COM (Common)
-   Lock Negative (-) → Battery Pack 1 (-)
-   ```
-- Relay Module Connections
-   ```bash
-   VCC → Raspberry Pi 5V (Pin 2)
-   GND → Raspberry Pi GND (Pin 6)
-   IN  → Raspberry Pi GPIO14 (Pin 8)
-   ```
-![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
+3. ### Software Installation
+   - **For Raspberry Pi**
+      - Clone the Raspberry Pi repository:
+         ```bash
+         git clone https://github.com/che0124/SmartDeliveryBox-RaspberryPi.git
+         ```
+      - Install dependencies:
+         ```bash
+         cd SmartDeliveryBox-RaspberryPi
+         pip install -r requirements.txt
+         ```
+      - Run the program:
+         ```bash
+         python app.py
+         ```
 
-### Software Installation
-#### For Raspberry Pi
-1. Clone the Raspberry Pi repository:
-   ```bash
-   git clone https://github.com/che0124/SmartDeliveryBox-RaspberryPi.git
-   ```
-2. Install dependencies:
-   ```bash
-   cd SmartDeliveryBox-RaspberryPi
-   pip install -r requirements.txt
-   ```
-3. Run the program:
-   ```bash
-   python app.py
-   ```
-
-#### For Web Server (Computer)
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/che0124/SmartDeliveryBox-IoT-final-proj.git
-   ```
-2. Install dependencies:
-   ```bash
-   cd SmartDeliveryBox-IoT-final-proj
-   pip install -r requirements.txt
-   ```
-3. Start the server:
-   ```bash
-   python app.py
-   ```
-4. Open `http://localhost:5000` in a browser to access the interface.
+   - **For Web Server (Computer)**
+      - Clone the repository:
+         ```bash
+         git clone https://github.com/che0124/SmartDeliveryBox-IoT-final-proj.git
+         ```
+      - Install dependencies:
+         ```bash
+         cd SmartDeliveryBox-IoT-final-proj
+         pip install -r requirements.txt
+         ```
+      - Start the server:
+         ```bash
+         python app.py
+         ```
+      - Open `http://localhost:5000` in a browser to access the interface.
 
 
 ## 📄 File Structure
@@ -149,7 +147,7 @@ SmartDeliveryBox-IoT-final-proj/
 - [Relay Module + Solenoid Door lock How to control them](https://www.youtube.com/watch?v=wGU04jtHC9w)
  
 
-## 📧 Contact
+## ✉️ Contact
 For any questions or suggestions, please contact:
 - Author: Joseph Kang
 - Email: joseph7492748@gmail.com
