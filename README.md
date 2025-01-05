@@ -17,7 +17,7 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 - **[LY-03 DC12V電磁電控鎖](https://www.icshop.com.tw/products/368011000480)**
 - **[1路5V繼電器模組](https://www.taiwaniot.com.tw/product/1%e8%b7%af%e7%b9%bc%e9%9b%bb%e5%99%a8%e6%a8%a1%e7%b5%84-5v%e4%bd%8e%e9%9b%bb%e5%b9%b3%e8%a7%b8%e7%99%bc-%e7%b9%bc%e9%9b%bb%e5%99%a8%e6%93%b4%e5%b1%95%e6%9d%bf-%e8%97%8d%e7%89%88/)**
 - **[IIC/I2C 1602 LCD 藍色背光液晶模組](https://www.taiwaniot.com.tw/product/1602-%e8%97%8d%e5%ba%95%e7%99%bd%e5%ad%97-iici2c-6x2-%e8%83%8c%e5%85%89%e6%b6%b2%e6%99%b6%e6%a8%a1%e7%b5%84/)**
-- **6V Battery Pack x2**
+- **6V Battery Pack for two (12V)**
 
 ### Software
 - **Development Frameworks**:
