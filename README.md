@@ -42,7 +42,7 @@ Before beginning the installation, ensure you have the following:
   
 ---  
 
-## 🚀 Quick Start Guide
+## 🚀 Implement
 ### Hardware Setup
 1. Power Supply Configuration
    ```bash
