@@ -48,12 +48,12 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 
 
 ## Hardware Setup
-   ### Circuit Diagram
-  ![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 1. Ensure Raspberry Pi is connected to the electronic lock and LCD screen.
 2. Check for stable network connectivity.
+   ### Circuit Diagram
+  ![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
-### Software Installation
+## Software Installation
 #### For Raspberry Pi
 1. Clone the Raspberry Pi repository:
    ```bash
