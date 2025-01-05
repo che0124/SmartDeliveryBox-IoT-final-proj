@@ -47,6 +47,8 @@ Before beginning the installation, ensure you have the following:
      
    > Librarie for Raspberry Pi
    - RPi.GPIO
+   - RPLCD
+   - Flask
    - smbus
   
 
