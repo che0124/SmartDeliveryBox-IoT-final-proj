@@ -27,7 +27,7 @@ A secure and intelligent delivery management system leveraging IoT technology to
 5. **Hardware Integration**:  
    The Raspberry Pi server controls the hardware components, including the locking mechanism, relay, and LCD, ensuring seamless interaction between software and hardware.
 
-## 📋 Prerequisites
+## 📋 Components
 Before beginning the installation, ensure you have the following:
 ### Hardware Requirements
 - **Raspberry Pi**
@@ -37,6 +37,7 @@ Before beginning the installation, ensure you have the following:
 - **12V Power Supply (Two 6V battery packs in series)**
 
 ### Software Requirements
+- **Raspbian Buster OS**
 - **Firebase account with a configured project**
 - **Python 3.x**
    #### Librarie for web server
@@ -47,11 +48,15 @@ Before beginning the installation, ensure you have the following:
    #### Librarie for Raspberry Pi
    - RPi.GPIO
    - RPLCD
-   - Flask
    - smbus
-  
+   - Flask
+> These libraries will be install later in the implement 
 
 ## 🚀 Implement
+### Setup Raspberry Pi
+- Follow the wesite below to set up your Raspberry Pi.
+   [https://www.raspberrypi.com/documentation/computers/getting-started.html](https://www.raspberrypi.com/documentation/computers/getting-started.html)
+
 ### Hardware Setup
 1. Power Supply Configuration
    ```bash
@@ -127,9 +132,13 @@ SmartDeliveryBox-IoT-final-proj/
 
 ## 📧 Contact
 For any questions or suggestions, please contact:
-- Author: Zhe-Wei Kang
-- Email: example@example.com
+- Author: Joseph Kang
+- Email: joseph7492748@gmail.com
 
-
-## 📜 License
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+## 📜 References
+- [Getting started with your Raspberry Pi](https://www.raspberrypi.com/documentation/computers/getting-started.html)
+- [Connecting to Raspberry Pi with RealVNC](https://www.youtube.com/watch?v=8bwbbG1mCzs&t=176s)
+- [Firebase Authentication](https://www.letswrite.tw/firebase-auth-email/)
+- [I2C連接LCD1602顯示日期時間](https://atceiling.blogspot.com/2019/10/raspberry-pi-53i2clcd1620.html)
+- [Relay Module + Solenoid Door lock How to control them](https://www.youtube.com/watch?v=wGU04jtHC9w)
+- 
