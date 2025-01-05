@@ -27,8 +27,6 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
   - Web Interface
   - Raspberry Pi Server
  
-### Circuit Diagram
-![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
 ### Workflow
 1. **Package Delivery**:  
@@ -46,6 +44,11 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 5. **Hardware Integration**:  
    The Raspberry Pi server controls the hardware components, including the locking mechanism, relay, and LCD, ensuring seamless interaction between software and hardware.
 
+## Circuit Diagram
+![SmartDeliveryBox Circuit](img/circuit-diagram.png)
+
+## System Diagram
+![SmartDeliveryBox system](img/system-diagram.png)
 
 ## 🚀 Installation and Usage
 
