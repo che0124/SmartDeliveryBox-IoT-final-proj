@@ -111,7 +111,6 @@ Before beginning the installation, ensure you have the following:
 
 ```plaintext
 SmartDeliveryBox-Pi/
-├── LCD1602.py        # LCD configuration
 ├── lcd_show.py       # LCD control 
 ├── lock_control.py   # Lock control 
 ├── app.py            # Raspberry Pi application entry point
