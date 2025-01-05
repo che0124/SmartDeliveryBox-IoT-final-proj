@@ -11,7 +11,7 @@ A secure and intelligent delivery management system leveraging IoT technology to
 - **Secure Lock Control** : Electronic lock supports control via the web interface.
 - **User-Friendly Operation** : Operated through a web-based interface.
 
-## Workflow
+## 🛠️ Workflow
 1. **Food Delivery**:  
    Delivery personnel enters a One-Time Password (OTP) on the web interface or a dedicated app to unlock the box and place the food securely.  
    
@@ -50,12 +50,23 @@ Before beginning the installation, ensure you have the following:
    - RPLCD
    - smbus
    - Flask
-> These libraries will be install later in the implement 
+> These libraries will be installed later
 
 ## 🚀 Implement
+
 ### Setup Raspberry Pi
-- Follow the wesite below to set up your Raspberry Pi.
-   [https://www.raspberrypi.com/documentation/computers/getting-started.html](https://www.raspberrypi.com/documentation/computers/getting-started.html)
+1. Follow the wesite below to set up your Raspberry Pi.<br>
+[https://www.raspberrypi.com/documentation/computers/getting-started.html](https://www.raspberrypi.com/documentation/computers/getting-started.html)
+2. Enabling SSH / I2C / VNC
+   - Open the Raspberry Pi Configuration tool from the Preferences menu.
+   - Navigate to the "Interfaces" tab.
+   - Enable SSH / I2C / VNC by selecting the "Enabled" radio button.
+   - Click "OK" to save the changes.
+
+Alternatively, you can enable via the command line:
+```bash
+   sudo raspi-config
+```
 
 ### Hardware Setup
 1. Power Supply Configuration
@@ -115,7 +126,7 @@ Before beginning the installation, ensure you have the following:
 ## 📄 File Structure
 
 ```plaintext
-SmartDeliveryBox-Pi/
+SmartDeliveryBox-RaspberryPi/
 ├── lcd_show.py       # LCD control 
 ├── lock_control.py   # Lock control 
 ├── app.py            # Raspberry Pi application entry point
@@ -130,10 +141,6 @@ SmartDeliveryBox-IoT-final-proj/
 └── README.md         # Documentation
 ```
 
-## 📧 Contact
-For any questions or suggestions, please contact:
-- Author: Joseph Kang
-- Email: joseph7492748@gmail.com
 
 ## 📜 References
 - [Getting started with your Raspberry Pi](https://www.raspberrypi.com/documentation/computers/getting-started.html)
@@ -141,4 +148,9 @@ For any questions or suggestions, please contact:
 - [Firebase Authentication](https://www.letswrite.tw/firebase-auth-email/)
 - [I2C連接LCD1602顯示日期時間](https://atceiling.blogspot.com/2019/10/raspberry-pi-53i2clcd1620.html)
 - [Relay Module + Solenoid Door lock How to control them](https://www.youtube.com/watch?v=wGU04jtHC9w)
-- 
+ 
+
+## 📧 Contact
+For any questions or suggestions, please contact:
+- Author: Joseph Kang
+- Email: joseph7492748@gmail.com
