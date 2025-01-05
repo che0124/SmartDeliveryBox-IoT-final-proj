@@ -2,7 +2,7 @@
 A secure and intelligent delivery management system leveraging IoT technology to revolutionize the delivery experience. This solution combines electronic access control with a web-based interface to provide a seamless, secure platform for managing deliveries.
 
 ## 📊 System Architecture
-![SmartDeliveryBox system](img/system-diagram.png)
+![SmartDeliveryBox system](static/asset/system-diagram.png)
 
 ## 🌟 Features
 - **OTP Verification for Delivery Personnel** : Use a one-time password (OTP) for secure access.
@@ -37,8 +37,19 @@ Before beginning the installation, ensure you have the following:
 - **12V Power Supply (Two 6V battery packs in series)**
 
 ### Software Requirements
-- Python 3.x
-- Firebase account with a configured project
+- **Firebase account with a configured project**
+- **Python 3.x**
+- Libraries:
+   > For web server
+   - Flask
+   - firebase-admin 
+   - pyotp
+   - requests
+     
+   > For Raspberry Pi
+   - RPi.GPIO
+   - smbus
+   - pyotp
   
 
 ## 🚀 Implement
@@ -62,7 +73,7 @@ Before beginning the installation, ensure you have the following:
    - IN  → Raspberry Pi GPIO14 (Pin 8)
    ```
 4. Circuit Diagram 
-  ![SmartDeliveryBox Circuit](img/circuit-diagram.png)
+  ![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
 
 ### Software Installation
 #### For Raspberry Pi
@@ -83,7 +94,7 @@ Before beginning the installation, ensure you have the following:
 #### For Web Server (Computer)
 1. Clone the repository:
    ```bash
-   git clone https://github.com/che0124/SmartDeliveryBox-IoT-final-proj/SmartDeliveryBox.git
+   git clone https://github.com/che0124/SmartDeliveryBox-IoT-final-proj.git
    ```
 2. Install dependencies:
    ```bash
@@ -101,9 +112,9 @@ Before beginning the installation, ensure you have the following:
 
 ```plaintext
 SmartDeliveryBox-Pi/
-├── LCD1602.py
-├── lcd_show.py
-├── lock_control.py
+├── LCD1602.py        # LCD configuration
+├── lcd_show.py       # LCD control 
+├── lock_control.py   # Lock control 
 ├── app.py            # Raspberry Pi application entry point
 ├── requirements.txt  # Dependency requirements
 └── README.md         # Documentation
