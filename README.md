@@ -40,7 +40,6 @@ Before beginning the installation, ensure you have the following:
 - Python 3.x
 - Firebase account with a configured project
   
----  
 
 ## 🚀 Implement
 ### Hardware Setup
@@ -98,39 +97,27 @@ Before beginning the installation, ensure you have the following:
 4. Open `http://localhost:5000` in a browser to access the interface.
 
 
-
 ## 📄 File Structure
 
 ```plaintext
-SmartDeliveryBox/
-├── app.py            # Main application entry point
+SmartDeliveryBox-Pi/
+├── app.py         # Raspberry Pi application entry point
 ├── requirements.txt  # Dependency requirements
-├── templates/        # HTML files
-├── static/           # Static resources (CSS, JS, Images)
 └── README.md         # Documentation
 
-SmartDeliveryBox-Pi/
-├── pi_app.py         # Raspberry Pi application entry point
+SmartDeliveryBox-IoT-final-proj/
+├── templates/        # HTML files
+├── static/           # Static resources (CSS, JS, Images)
+├── app.py            # Main application entry point
 ├── requirements.txt  # Dependency requirements
 └── README.md         # Documentation
 ```
-
----
-
-## 🤝 Contributing
-We welcome contributions from everyone:
-1. Fork the repository.
-2. Submit a Pull Request.
-3. Provide feedback or report issues via [Issues](https://github.com/yourusername/SmartDeliveryBox/issues).
-
----
 
 ## 📧 Contact
 For any questions or suggestions, please contact:
 - Author: Zhe-Wei Kang
 - Email: example@example.com
 
----
 
 ## 📜 License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
