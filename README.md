@@ -13,8 +13,8 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 - **User-Friendly Operation** : Operated through a web-based interface.
 
 ## Workflow
-1. **Package Delivery**:  
-   Delivery personnel enters a One-Time Password (OTP) on the web interface or a dedicated app to unlock the box and place the package securely.  
+1. **Food Delivery**:  
+   Delivery personnel enters a One-Time Password (OTP) on the web interface or a dedicated app to unlock the box and place the food securely.  
    
 2. **Real-Time Feedback**:  
    Instructions and box status are displayed on the LCD screen connected to the Raspberry Pi, providing immediate feedback during the delivery process.
