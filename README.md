@@ -64,9 +64,9 @@ Before beginning the installation, ensure you have the following:
    - Click "OK" to save the changes.
 
 Alternatively, you can enable via the command line:
-```bash
-   sudo raspi-config
-```
+   ```bash
+      sudo raspi-config
+   ```
 
 ### Hardware Setup
 1. Power Supply Configuration
