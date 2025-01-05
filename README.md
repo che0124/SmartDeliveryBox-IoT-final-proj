@@ -39,15 +39,12 @@ Before beginning the installation, ensure you have the following:
 ### Software Requirements
 - **Firebase account with a configured project**
 - **Python 3.x**
-   > Librarie for web server
+   #### Librarie for web server
    - Flask
    - firebase-admin 
    - pyotp
    - requests
- 
-<br>
-
-   > Librarie for Raspberry Pi
+   #### Librarie for Raspberry Pi
    - RPi.GPIO
    - RPLCD
    - Flask
