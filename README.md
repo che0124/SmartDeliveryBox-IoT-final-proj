@@ -2,15 +2,17 @@
 
 A smart delivery box system that leverages IoT technology to enhance the delivery and pickup experience. It integrates electronic lock control and a web-based user interface to provide security and convenience.
 
-## 📦 Key Features
+## Key Features
 1. **OTP Verification for Delivery Personnel** : Use a one-time password (OTP) for secure access.
 2. **LCD Display for Delivery Personnel** : An LCD screen provides clearly instructions and feedback.
 3. **Group Access Management** : Allowing multiple people to control the same box.
 4. **Secure Lock Control** : Electronic lock supports control via the web interface.
 5. **User-Friendly Operation** : Operated through a web-based interface.
 
+## System Diagram
+![SmartDeliveryBox system](img/system-diagram.png)
 
-## 🛠 Technical Details
+## Technical Details
 
 ### Hardware
 - **Raspberry Pi**
@@ -45,12 +47,7 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
    The Raspberry Pi server controls the hardware components, including the locking mechanism, relay, and LCD, ensuring seamless interaction between software and hardware.
 
 
-## System Diagram
-![SmartDeliveryBox system](img/system-diagram.png)
-
-## 🚀 Installation and Usage
-
-### Hardware Setup
+## Hardware Setup
    ### Circuit Diagram
   ![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 1. Ensure Raspberry Pi is connected to the electronic lock and LCD screen.
