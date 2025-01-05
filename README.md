@@ -31,21 +31,12 @@ A smart delivery box system that leverages IoT technology to enhance the deliver
 ![SmartDeliveryBox Circuit](img/circuit-diagram.png)
 
 ### Workflow
-1. **Package Delivery**:  
-   Delivery personnel enters a One-Time Password (OTP) on the web interface or a dedicated app to unlock the box and place the package securely.  
-   
-2. **Real-Time Feedback**:  
-   Instructions and box status are displayed on the LCD screen connected to the Raspberry Pi, providing immediate feedback during the delivery process.
-
-3. **Remote Management**:  
-   Users (customers) can remotely manage access permissions, monitor delivery status, and lock/unlock the box via the web interface.
-
-4. **Shared Access**:  
-   Authorized group members can access the box if granted specific permissions by the primary user.
-
-5. **Hardware Integration**:  
-   The Raspberry Pi server controls the hardware components, including the locking mechanism, relay, and LCD, ensuring seamless interaction between software and hardware.
-
+1. Delivery personnel enters a One-Time Password (OTP) to unlock the box and place the package.  
+2. Instructions and box status are displayed on the LCD screen.  
+3. Users can remotely manage access and lock/unlock the box via the web interface.  
+4. Authorized group members can access the box with granted permissions.  
+5. The Raspberry Pi server controls hardware components for seamless operation.
+6. 
 
 ## 🚀 Installation and Usage
 
