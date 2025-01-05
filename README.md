@@ -83,7 +83,7 @@ Before beginning the installation, ensure you have the following:
 #### For Web Server (Computer)
 1. Clone the repository:
    ```bash
-   git clone https://github.com/che0124/SmartDeliveryBox-IoT-final-proj.git
+   git clone https://github.com/che0124/SmartDeliveryBox-IoT-final-proj/SmartDeliveryBox.git
    ```
 2. Install dependencies:
    ```bash
