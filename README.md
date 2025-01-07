@@ -70,7 +70,8 @@ Before beginning the installation, ensure you have the following:
       - Go to Interfacing Options and enable each interface as needed.
         
 ### 2. Hardware Setup
-   ![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
+   - Circuit diagram
+      ![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
    - #### Step 2.1 : Power Supply Configuration
       - Use two 6V battery packs to provide power to the electronic lock and relay module:
          ```bash
