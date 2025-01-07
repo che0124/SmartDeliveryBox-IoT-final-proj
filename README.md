@@ -79,7 +79,7 @@ Before beginning the installation, ensure you have the following:
          ```
         ![Power Supply Configuration](static/asset/power-supply.png)
    - #### Step 2.2 : Electronic Lock Wiring
-      - Fix the lock onto the box.
+      - Connect the wiring of the lock and fix it onto the box.
          ```bash
          Lock Positive (+) → Relay COM (Common)
          Lock Negative (-) → Battery Pack 1 (-)
