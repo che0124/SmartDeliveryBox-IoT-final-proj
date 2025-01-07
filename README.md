@@ -54,37 +54,51 @@ Before beginning the installation, ensure you have the following:
 ## 🚀 Implementation
 
 ### 1. Setup Raspberry Pi
-   - Follow the wesite below to set up your Raspberry Pi.<br>
-   [https://www.raspberrypi.com/documentation/computers/getting-started.html](https://www.raspberrypi.com/documentation/computers/getting-started.html)
-   - Enabling SSH / I2C / VNC
-      - Open the Raspberry Pi Configuration tool from the Preferences menu.
-      - Navigate to the "Interfaces" tab.
-      - Enable SSH / I2C / VNC by selecting the "Enabled" radio button.
+   - #### Step 1.1 : Follow the wesite below to set up your Raspberry Pi.<br>
+      [https://www.raspberrypi.com/documentation/computers/getting-started.html](https://www.raspberrypi.com/documentation/computers/getting-started.html)
+      - #### Step 1.2 : Enable Interfaces (SSH / I2C / VNC)
+      - Open the Raspberry Pi Configuration tool from the Preferences menu in the desktop environment.
+      - Navigate to the "Interfaces" tab and enable the following:
+         - SSH
+         - I2C
+         - VNC
       - Click "OK" to save the changes.
-   - Alternatively, you can enable via the command line:
+   - #### Step 1.3 : Alternatively, you can enable via the command line:
       ```bash
       sudo raspi-config
       ```
-
+      - Go to Interfacing Options and enable each interface as needed.
+        
 ### 2. Hardware Setup
-   - **Power Supply Configuration**
-      ```bash
-      Connect two 6V battery packs:
+   - #### Step 2.1 : Power Supply Configuration
+      - Use two 6V battery packs to provide power to the electronic lock and relay module:
+         ```bash
         Battery Pack 1 (+) → Battery Pack 2 (-)
         Battery Pack 1 (-) → Lock Negative (-)
         Battery Pack 2 (+) → Relay NO (Normally Open)
-      ```
-   - **Electronic Lock Wiring**
-      ```bash
-      Lock Positive (+) → Relay COM (Common)
-      Lock Negative (-) → Battery Pack 1 (-)
-      ```
-   - **Relay Module Connections**
-      ```bash
-      VCC → Raspberry Pi 5V (Pin 2)
-      GND → Raspberry Pi GND (Pin 6)
-      IN  → Raspberry Pi GPIO14 (Pin 8)
-      ```
+         ```
+        ![Power Supply Configuration](static/asset/power-supply.png)
+   - #### Step 2.2 : Electronic Lock Wiring
+      - Fix the lock onto the box.
+         ```bash
+         Lock Positive (+) → Relay COM (Common)
+         Lock Negative (-) → Battery Pack 1 (-)
+         ```
+   - #### Step 2.3 : Relay Module Connections
+      - Connect the relay module to the Raspberry Pi GPIO pins as follows:
+         ```bash
+         VCC → Raspberry Pi 5V (Pin 4)
+         GND → Raspberry Pi GND (Pin 6)
+         IN  → Raspberry Pi GPIO14 (Pin 8)
+         ```
+   - #### Step 2.4 : LCD Module
+      - Connect the LCD module to the Raspberry Pi GPIO pins as follows:
+         ```bash
+         VCC → Raspberry Pi 5V (Pin 2)
+         GND → Raspberry Pi GND (Pin 14)
+         SDA  → Raspberry Pi GPIO2 (Pin 3)
+         SCL  → Raspberry Pi GPIO3 (Pin 5)
+         ```
       ![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
 
 ### 3. Software Installation
