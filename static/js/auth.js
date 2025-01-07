@@ -2,13 +2,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDOldQSuNMAlQMTT7Jy9dWdfHZXg2BU3S4",
-    authDomain: "food-delivery-2bb20.firebaseapp.com",
-    projectId: "food-delivery-2bb20",
-    storageBucket: "food-delivery-2bb20.firebasestorage.app",
-    messagingSenderId: "146241836563",
-    appId: "1:146241836563:web:965723e8ab2e91b5d1d1e6",
-    measurementId: "G-EL13FFNMDQ"
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_STORAGE_BUCKET",
+    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+    appId: "YOUR_APP_ID",
 };
 
 const app = initializeApp(firebaseConfig);
