@@ -51,7 +51,7 @@ Before beginning the installation, ensure you have the following:
    - smbus
    - Flask
 
-## 🚀 Implement
+## 🚀 Implementation
 
 ### 1. Setup Raspberry Pi
    - Follow the wesite below to set up your Raspberry Pi.<br>
