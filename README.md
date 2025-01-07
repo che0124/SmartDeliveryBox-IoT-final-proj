@@ -103,6 +103,7 @@ Before beginning the installation, ensure you have the following:
          SDA  → Raspberry Pi GPIO2 (Pin 3)
          SCL  → Raspberry Pi GPIO3 (Pin 5)
          ```
+        ![lock](static/asset/lcd.png)
       ![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
 
 ### 3. Software Installation
