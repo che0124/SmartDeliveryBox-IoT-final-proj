@@ -53,7 +53,7 @@ Before beginning the installation, ensure you have the following:
 
 ## 🚀 Implement
 
-1. ### Setup Raspberry Pi
+### 1. Setup Raspberry Pi
    - Follow the wesite below to set up your Raspberry Pi.<br>
    [https://www.raspberrypi.com/documentation/computers/getting-started.html](https://www.raspberrypi.com/documentation/computers/getting-started.html)
    - Enabling SSH / I2C / VNC
@@ -66,7 +66,7 @@ Before beginning the installation, ensure you have the following:
       sudo raspi-config
       ```
 
-2. ### Hardware Setup
+### 2. Hardware Setup
    - **Power Supply Configuration**
       ```bash
       Connect two 6V battery packs:
@@ -87,7 +87,7 @@ Before beginning the installation, ensure you have the following:
       ```
    ![SmartDeliveryBox Circuit](static/asset/circuit-diagram.png)
 
-3. ### Software Installation
+### 3. Software Installation
    - **For Raspberry Pi**
       - Clone the Raspberry Pi repository:
          ```bash
