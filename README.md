@@ -84,6 +84,8 @@ Before beginning the installation, ensure you have the following:
          Lock Positive (+) → Relay COM (Common)
          Lock Negative (-) → Battery Pack 1 (-)
          ```
+         ![lock](static/asset/lock.png)
+        
    - #### Step 2.3 : Relay Module Connections
       - Connect the relay module to the Raspberry Pi GPIO pins as follows:
          ```bash
