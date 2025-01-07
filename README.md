@@ -93,6 +93,8 @@ Before beginning the installation, ensure you have the following:
          GND → Raspberry Pi GND (Pin 6)
          IN  → Raspberry Pi GPIO14 (Pin 8)
          ```
+        ![lock](static/asset/relay.png)
+        
    - #### Step 2.4 : LCD Module
       - Connect the LCD module to the Raspberry Pi GPIO pins as follows:
          ```bash
