@@ -159,7 +159,7 @@ SmartDeliveryBox-IoT-final-proj/
 ```
 
 
-## [Demo Video](https://youtu.be/gzkcJCA_JWo)
+## 🎞️ [Demo Video](https://youtu.be/gzkcJCA_JWo)
 
 
 ## 📜 References
