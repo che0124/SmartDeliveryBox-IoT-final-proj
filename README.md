@@ -1,6 +1,7 @@
 # IoT SmartDeliveryBox
 A secure and intelligent delivery management system leveraging IoT technology to revolutionize the delivery experience. This solution combines electronic access control with a web-based interface to provide a seamless, secure platform for managing deliveries.
 
+
 ## 📊 System Architecture
 ![SmartDeliveryBox system](static/asset/system-diagram.png)
 
