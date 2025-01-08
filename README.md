@@ -56,7 +56,7 @@ Before beginning the installation, ensure you have the following:
 ### 1. Setup Raspberry Pi
    - #### Step 1.1 : Follow the wesite below to set up your Raspberry Pi.<br>
       [https://www.raspberrypi.com/documentation/computers/getting-started.html](https://www.raspberrypi.com/documentation/computers/getting-started.html)
-      - #### Step 1.2 : Enable Interfaces (SSH / I2C / VNC)
+   - #### Step 1.2 : Enable Interfaces (SSH / I2C / VNC)
       - Open the Raspberry Pi Configuration tool from the Preferences menu in the desktop environment.
       - Navigate to the "Interfaces" tab and enable the following:
          - SSH
