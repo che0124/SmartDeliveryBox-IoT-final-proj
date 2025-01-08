@@ -108,36 +108,72 @@ Before beginning the installation, ensure you have the following:
         ![lock](static/asset/lcd.png)
 
 ### 3. Software Installation
-   - **For Raspberry Pi**
-      - Clone the Raspberry Pi repository:
+   - #### Step 3.2 : For Raspberry Pi
+      - **Clone the Raspberry Pi repository**
          ```bash
          git clone https://github.com/che0124/SmartDeliveryBox-RaspberryPi.git
          ```
-      - Install dependencies:
+      - **Install dependencies**
          ```bash
          cd SmartDeliveryBox-RaspberryPi
          pip install -r requirements.txt
          ```
-      - Run the program:
+      - **Run the program**
          ```bash
          python app.py
          ```
-
-   - **For Web Server (Computer)**
-      - Clone the repository:
+     
+   - #### Step 3.3 : For Web Server (Computer)
+      - ##### Clone the repository
          ```bash
          git clone https://github.com/che0124/SmartDeliveryBox-IoT-final-proj.git
          ```
-      - Install dependencies:
+      - ##### Install dependencies
          ```bash
          cd SmartDeliveryBox-IoT-final-proj
          pip install -r requirements.txt
          ```
-      - Start the server:
+      - ##### Firebase Setup
+         - **Create a Firebase Project**
+            - Go to the [Firebase Console](https://firebase.google.com/) and log in with your Google account.
+            - Click **Add Project**, enter a project name (e.g. SmartDeliveryBox), and follow the instructions to create the project.
+         - **Add Firebase to Your App**
+            - Copy the Firebase configuration code provided in the Firebase Console. It will look like this :
+               ```javascript
+               const firebaseConfig = {
+                  apiKey: "YOUR_API_KEY",
+                  authDomain: "YOUR_AUTH_DOMAIN",
+                  projectId: "YOUR_PROJECT_ID",
+                  storageBucket: "YOUR_STORAGE_BUCKET",
+                  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+                  appId: "YOUR_APP_ID"
+               };
+               ```
+            - Open the `firebase.js` and `auth.js` file in the project
+            - Paste the copied Firebase configuration code into the file, replacing the placeholder values (`YOUR_API_KEY`, `YOUR_AUTH_DOMAIN`, etc.) with the actual values from your Firebase Console.
+         - **Firebase Admin SDK Setup**
+            - Enable Firebase Admin SDK
+               - Select your project and navigate to **Project Settings** > **Service Accounts** tab.
+               - Click **Generate New Private Key** to download a JSON file containing your private key (e.g., `smart-delivery-box-firebase-adminsdk.json`).
+               - Save this file securely in your project folder.
+            - Integrate Firebase Admin SDK
+               - Open the `app.py` file in your project.
+               - Locate the existing Firebase Admin SDK initialization code.
+               - Replace the JSON file name `project-name-firebase-adminsdk.json` with the name of the file you just saved (e.g. `smart-delivery-box-firebase-adminsdk.json`).<br>
+                 Example :
+                  ```python
+                  # Initialize Firebase Admin SDK with the service account key
+                  from firebase_admin import credentials, initialize_app
+                  
+                  cred = credentials.Certificate('smart-delivery-box-firebase-adminsdk.json')
+                  initialize_app(cred)
+                  ```
+     
+      - **Start the server**
          ```bash
          python app.py
          ```
-      - Open `http://localhost:5000` in a browser to access the interface.
+      - **Open `http://localhost:5000` in a browser to access the interface**
 
 
 ## 📄 File Structure
