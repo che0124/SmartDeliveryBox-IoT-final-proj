@@ -109,7 +109,7 @@ Before beginning the installation, ensure you have the following:
 
 ### 3. Software Installation
    - #### Step 3.2 : For Raspberry Pi
-      - **Clone the Raspberry Pi repository**
+      - **Clone the [SmartDeliveryBox-RaspberryPi](https://github.com/che0124/SmartDeliveryBox-RaspberryPi) repository**
          ```bash
          git clone https://github.com/che0124/SmartDeliveryBox-RaspberryPi.git
          ```
